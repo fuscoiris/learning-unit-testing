@@ -1,0 +1,6 @@
+@ProgettoTestingEDebugging_HostAddress = http://localhost:5034
+
+GET {{ProgettoTestingEDebugging_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
