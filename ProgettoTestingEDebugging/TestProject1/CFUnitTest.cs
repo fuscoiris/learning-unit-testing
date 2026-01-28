@@ -37,5 +37,17 @@ namespace TestProject1
             
             Assert.That(var2, Is.EqualTo(cfService.SeVocale(var1)));
         }
+
+
+        [TestCase("GIOVANNI", "GNN")]
+        [TestCase("AIUOLA", "LAI")]
+        [TestCase("IA", "IAX")]
+        [TestCase("LUCCA", "LCC")]
+        [TestCase("COMPUTER", "CPT")]
+        [TestCase("SANTA KLAUS", "STK")]
+        public void testCodNome(string s, string risultatoatteso)
+        {
+            Assert.That(risultatoatteso, Is.EqualTo(cfService.CodNome(s)));
+        }
     }
 }
